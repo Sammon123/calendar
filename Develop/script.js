@@ -1,9 +1,15 @@
 // display the current date at the top of the calendar
 //  - create variable
-var todaysDate = new Date();
-console.log(todaysDate);
+function currentDate() {
+	var todaysDate = new Date();
+	console.log(todaysDate);
+	//  - using get method to display the current date
+	var day = todaysDate.getDate();
+	var month = todaysDate.getMonth();
+	var year = todaysDate.getFullYear();
+	var date = dat + '-' + (month + 1) + '-' + year;
+}
 
-//  - using get method to display the current date
 // display time blocks for current business hours
 //  - display block level element
 //  - create array for hours to represent
